@@ -10,3 +10,34 @@ Staging area gives the possibility to join several files to the same commit.
 I don't have to commit files that are in working process or that i don't need anymore
 (at least in this version of my work), so the commit points are logic oriented and
 makes it easier to find a specific version later on.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I move add to staging area the files that make sense in that logic commit, then
+i commit them; not having to commit all the work, instead i group my files in
+logical changes. To be sure i use the commands diff (compares the files in working area to the files in stage area that have changed) and diff --stage (ompares the files in stage area to the last commited files in  repository that have changed) if any ;)
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches are helpfull if i want to make structural changes in my project like changing language or build a different version without loosing my "master" project version.
+
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams make it easy to visualize the branches as they show
+the "parent" of the commits in each branched referd. So we can see
+the base commit for the branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When merging two branches the files are compared to the inicial commit point
+(where the branches splits) and commits the changes made in both branches
+keeping the history of commits (order by date/time) made in each branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros: Easy, fast, calls for attention if there are doubts.
+
+Cons:
